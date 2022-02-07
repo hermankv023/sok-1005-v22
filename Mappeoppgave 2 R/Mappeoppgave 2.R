@@ -15,7 +15,7 @@ Covidstats <- Covidstats %>%
 Covidstats$name <- state.abb[match(Covidstats$name, state.name)]
 Covidstats[is.na(Covidstats)] <- "DC"
 
-#fremviser tabell med navn på akser
+#fremviser graf med navn på akser
 Covidstats %>%
   ggplot(aes(x = fully_vaccinated_pct_of_pop, y = deaths_per_100k, label=name)) +
   geom_point(color="turquoise3", size=1.7) +
@@ -39,7 +39,7 @@ Covidstats %>%
 # kjører lm og finner coefficients
 
 lm(deaths_per_100k ~ fully_vaccinated_pct_of_pop, data = Covidstats)
-#Fremviser tabell med en linje som fremviser en klar sammenheng mellom døde og vaksinasjonsrate.
+#Fremviser graf med utgangspunkt i tabell med en linje som fremviser en klar sammenheng mellom døde og vaksinasjonsrate.
 Covidstats %>%
   ggplot(aes(x = fully_vaccinated_pct_of_pop, y = deaths_per_100k, label=name)) +
   geom_point(color="turquoise3", size=0.5) +
