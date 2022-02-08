@@ -58,8 +58,8 @@ Covidstats %>%
            Lower death rate") +
   annotate(geom="text", x=0.60, y=17, 
            label="Lower Vaccination rate,higher death rate") +
-  theme(panel.grid.minor = element_line(linetype="dashed")) +
-  theme(panel.grid.major = element_line(linetype="dashed")) 
+  theme(panel.grid.minor = element_line(linetype="dashed")) 
+
 
 #Hva ser vi?
 #Det vi kan få ut fra oppgave 2 er at vi ser det er en korrelasjon mellom vaksinasjon av populasjon og antall døde av Corona. 
