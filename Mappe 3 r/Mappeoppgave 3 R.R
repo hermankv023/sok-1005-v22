@@ -1,6 +1,6 @@
   library(rvest)
   library(tidyverse)
-  #Jobbet med Amund og
+  #Jobbet med Amund og Knut
   #henter inn nettside 
   nettside <- read_html("https://www.motor.no/aktuelt/motors-store-vintertest-av-rekkevidde-pa-elbiler/217132")
   tabell <- nettside %>% html_table(fill = TRUE)
