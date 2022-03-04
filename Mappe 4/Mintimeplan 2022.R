@@ -2,6 +2,7 @@
   library(tidyverse)
   library(rlist)
   library(purrr)
+  #Jobbet sammen med Amund Bech 
   #minefag
   fag1 <-"https://timeplan.uit.no/emne_timeplan.php?sem=22v&module%5B%5D=SOK-1005-1&week=1-20&View=list"
   fag2 <-"https://timeplan.uit.no/emne_timeplan.php?sem=22v&module%5B%5D=SOK-1006-1&week=1-20&View=list"
