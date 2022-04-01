@@ -122,4 +122,6 @@ ax.set_xlabel('Mål')
 ax.scatter(np.log(g['+']), g['V'],  label='Observasjoner')
 ax.legend(loc='lower right',frameon=False)
 
-#gjort en regrisjonsanalyse av mål/seier og vi ser at det er en korelasjon mellom antall mål og kamper vunnet,ikke alltid men som oftest
+#Hentet en tabell for bundesliga 2020 og gjort en analyse for å se om påstanden om at man skårer mer mål, vinner man også flere kamper. Etter å ha endret på formen 
+kan vi nå se regrisjonsanalysen. Her ser vi at det er en korelasjon mellom antall mål lagene skårer, men at det ikke alltid stemmer
+
